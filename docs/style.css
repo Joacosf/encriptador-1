@@ -1,9 +1,13 @@
 
-
-
 .contenido{
     display: flex;
     justify-content: space-around;
+}
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .inputText{
@@ -15,4 +19,23 @@
 .input{
     height: 500px;
     width: 700px;
+    border-radius: 15px; 
+   
+}
+
+.botones{
+    margin-top: 30px;
+}
+
+.btnEncriptar{
+    padding: 15px 25px;
+    background: #154168;
+    border-radius: 10px;
+    margin: 0 15px;
+}
+.btnDesencriptar{
+    padding: 15px 25px;
+    background: #154168;
+    border-radius: 10px;
+    margin: 0 15px;
 }

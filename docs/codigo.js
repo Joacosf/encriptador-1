@@ -6,26 +6,24 @@ btnEncriptar.addEventListener("click", ()=> {
     
     const inputText = document.querySelector(".input").value.toLowerCase();
 
-    txt = inputText.replace(/a/img,"airx");
-    var txt = txt.replace(/e/img,"elvus");
-    var txt = txt.replace(/i/img,"inti");
-    var txt = txt.replace(/o/img,"over");
-    var txt = txt.replace(/u/img,"under");
+    txt = inputText.replace(/a/igm,"arx");
+    var txt = txt.replace(/e/igm,"elv");
+    var txt = txt.replace(/i/igm,"int");
+    var txt = txt.replace(/o/igm,"ovr");
+    var txt = txt.replace(/u/igm,"und");
 
-    document.querySelector(".input").textContent = "mensaje encriptado";
     texto.innerHTML = txt;
 });
 
-btnDesencriptar.addEventListener("click",() =>{
 
+btnDesencriptar.addEventListener("click", () =>{
     const inputText = document.querySelector(".input").value.toLowerCase();
 
-    var txt = inputText.replace(/airx/img,"a");
-    var txt = txt.replace(/elvus/img,"e");
-    var txt = txt.replace(/inti/img,"i");
-    var txt = txt.replace(/over/img,"o");
-    var txt = txt.replace(/under/img,"u");
+    var txt = inputText.replace(/arx/igm,"a");
+    var txt = txt.replace(/elv/igm,"e");
+    var txt = txt.replace(/int/igm,"i");
+    var txt = txt.replace(/ovr/igm,"o");
+    var txt = txt.replace(/und/igm,"u");
 
     texto.innerHTML = txt;
-
 });
