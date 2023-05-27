@@ -1,6 +1,7 @@
 const btnEncriptar = document.querySelector(".btnEncriptar");
 const btnDesencriptar = document.querySelector(".btnDesencriptar");
 const texto = document.getElementById("texto");
+const copiar = document.querySelector(".copiar");
 
 btnEncriptar.addEventListener("click", ()=> {
     
@@ -27,3 +28,9 @@ btnDesencriptar.addEventListener("click", () =>{
 
     texto.innerHTML = txt;
 });
+
+copiar.addEventListener("click", () =>{
+
+    navigator.clipboard.writeText(texto.value);
+    alert("texto copiado");
+})
